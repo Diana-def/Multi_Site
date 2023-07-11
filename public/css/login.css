@@ -1,0 +1,233 @@
+a {
+  color: #4e96fa; }
+
+.row {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: 'Roboto', sans-serif; }
+/* dialog */
+.logo__lang:hover .dialog {
+  visibility: visible;
+  opacity: 1; }
+
+.logo__lang {
+  position: relative; }
+
+.logo__lang {
+  cursor: pointer; }
+
+.dialog {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 8px 0;
+  box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease,opacity .3s ease;
+  width: 200px;
+  z-index: 2; }
+  .dialog__wrap {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 16px;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500; }
+    .dialog__wrap img {
+      margin-right: 8px;
+      height: 25px;
+      width: 25px; }
+
+.auth-layout__content {
+  max-width: 412px;
+  width: calc(100% - 40px); }
+
+.col-lg-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+  position: relative; }
+
+.lg-7-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.logo {
+  position: absolute;
+  top: 40px;
+  max-width: 412px; }
+  .logo__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.logo__multi {
+  height: 30px;
+  width: 104px; }
+.logo__multi img {
+	height: 30px;
+}
+.login__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px; }
+
+.login__subtitle {
+  font-size: 12px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6); }
+
+.text-caption {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 8px; }
+
+.red--text {
+  color: #ff525f;
+  caret-color: #ff525f; }
+
+.error--text {
+  color: #ff515f !important;
+  caret-color: #ff515f !important; }
+
+.v-form a {
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 16px; }
+.v-form button {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #074787;
+  border-color: #074787;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 15px; 
+  font-size: .875rem;
+}
+.v-form-input {
+  margin-bottom: 2px; }
+.v-input__control {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  width: 100%; }
+
+.v-input__slot {
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 1px solid #acb8c9;
+  border-radius: 10px; }
+  .v-input__slot input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px; }
+    .v-input__slot input:focus {
+      outline: 0; }
+  .v-input__slot span {
+    color: #acb8c9;
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .v-input__slot span .email {
+      height: 23px;
+      width: 23px; }
+    .v-input__slot span .password {
+      height: 25px;
+      width: 25px; }
+
+.v-messages__message {
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #fff; }
+
+.v-icon__component {
+  fill: currentColor; }
+
+.v-text-field__details {
+  height: 20px; }
+
+.col-lg-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  background: url(../images/banner.97f5c7a4.jpg) 0/cover;
+  background-repeat: no-repeat; }
+
+.col-lg-5__img {
+  display: none; }
+
+.logo-blue {
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .col-lg-5 {
+    background: #000;
+    background-position: top;
+    max-width: 100%; }
+
+  .col-lg-5__img {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative; }
+
+  .logo-blue {
+    display: block;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    z-index: 1; 
+	height: 30px;
+	}
+
+  .col-lg-7 {
+    max-width: 100%;
+    padding-bottom: 65px; }
+
+  .lg-7-flex {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .row {
+    display: block;
+    flex-direction: column-reverse; }
+
+  .logo {
+    position: static;
+    padding-top: 30px; }
+    .logo__multi {
+      opacity: 0; }
+    .logo__lang {
+      margin-right: 30px; }
+
+  .form {
+    padding-top: 7px; } }
+
+/*# sourceMappingURL=start.css.map */

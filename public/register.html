@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" href="/images/icons/airplane-flight.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/register.css">
+  <link rel="stylesheet" href="/css/register_.css">
+</head>
+<body>
+  
+<div class="row">
+
+	<div class="col-lg-5">
+		<a href="/"><img class="logo-blue" src="/images/icons/3.png" alt=""></a>
+		<img class="col-lg-5__img" src="images/banner-mob.5cb422fa.jpg" alt="">
+	</div>
+
+	<div class="col-lg-7">
+	
+		<div class="logo auth-layout__content">
+			<div class="logo__wrap">
+				<div class="logo__multi"><a href="/"><img src="/images/icons/2.png" alt=""></a></div>
+				<div class="logo__lang"><img src="/images/icons/ru.129e6472.svg" alt="">
+					<div class="dialog">
+						<div class="dialog__wrap">
+							<img src="images/icons/uk.edd8ceba.svg" alt="">
+							<p> Українська </p>
+						</div>
+						<div class="dialog__wrap">
+							<img src="images/icons/en.5a81ab21.svg" alt="">
+							<p> English </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="lg-7-flex">
+			<div class="form auth-layout__content">
+				<h1 class="login__title">
+					 Добро пожаловать! 
+				</h1>
+				<p class="login__subtitle">
+					 Зарегистрируйтесь, чтобы продолжить
+				</p>
+				<form id="registrationForm" method="POST" action="/register" class="v-form">
+					<div class="v-form-input">
+						<p class="text-caption">Имя<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="none" class="v-icon__component email"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"></path></svg></span>
+								<input type="text" id="name" name="name" required>
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Неправильно набран адрес электронной почты</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<p class="text-caption">Фамилия<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="none" class="v-icon__component email"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"></path></svg></span>
+								<input type="text" id="last_name" name="last_name" required>
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Неправильно набран адрес электронной почты</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<p class="text-caption">Email<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="none" class="v-icon__component email"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"></path></svg></span>
+								<input type="email" id="email" name="email" required />
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Неправильный адрес электронной почты</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<p class="text-caption">Username<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="none" class="v-icon__component email"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"></path></svg></span>
+								<input type="text" id="username" name="username" required />
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Username уже занят</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<p class="text-caption">Пароль<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 24" stroke="none" class="v-icon__component password"><path d="M17.5 9H16V6.99998C16 3.14016 12.8599 0 9 0C5.14012 0 2.00002 3.14016 2.00002 6.99998V9H0.500016C0.223641 9 0 9.22364 0 9.50002V22C0 23.103 0.896953 24 2.00002 24H16C17.103 24 18 23.103 18 22V9.50002C18 9.22364 17.7764 9 17.5 9ZM10.4971 19.4448C10.5127 19.5859 10.4673 19.7275 10.3726 19.8335C10.2779 19.9395 10.1421 20 10 20H8.00002C7.85794 20 7.72219 19.9395 7.62745 19.8335C7.53272 19.7276 7.4873 19.586 7.50295 19.4448L7.81838 16.6084C7.30617 16.2359 7.00003 15.6465 7.00003 15C7.00003 13.897 7.89698 13 9.00005 13C10.1031 13 11.0001 13.8969 11.0001 15C11.0001 15.6465 10.6939 16.2359 10.1817 16.6084L10.4971 19.4448ZM13 9H5.00002V6.99998C5.00002 4.79442 6.79444 3 9 3C11.2056 3 13 4.79442 13 6.99998V9Z"></path></svg></span>
+								<input type="password" id="password" name="password" required />
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Длина пароля должна составлять от 8 до 20 латинских символов, в том числе одна цифра и одна заглавная буква</div>-->
+							</div>
+						</div>
+					</div>
+					<div class="v-form-input">
+						<p class="text-caption">Telegram<b class="red--text"> * </b></p>
+						<div class="v-input__control">
+							<div class="v-input__slot">
+								<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 24" stroke="none" class="v-icon__component password"><path d="M23.685 0.639088C23.455 0.476089 23.153 0.454089 22.903 0.585088L0.403043 12.335C0.137044 12.474 -0.0199555 12.758 0.00204447 13.057C0.0250444 13.357 0.224044 13.613 0.507043 13.71L6.76202 15.848L20.083 4.45808L9.77501 16.877L20.258 20.46C20.336 20.486 20.418 20.5 20.5 20.5C20.636 20.5 20.771 20.463 20.89 20.391C21.08 20.275 21.209 20.08 21.242 19.861L23.992 1.36109C24.033 1.08109 23.915 0.803088 23.685 0.639088Z"></path></svg></span>
+								<input type="text" placeholder="@Login" id="telegram" name="telegram" required>
+							</div>
+							<div class="v-text-field__details">
+<!--								<div class="v-messages__message">Укажите, пожалуйста, логин в Telegram. Например, @example</div>-->
+							</div>
+						</div>
+					</div>
+<!--					<a href="#">Забыли пароль?</a>-->
+					<button type="submit"> Продолжить </button>
+				</form>
+				<div class="text-caption">
+					 У вас нет аккаунта? 
+					 <a href="/login.html"> Авторизоваться </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+				
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
